@@ -8,6 +8,7 @@
 
 body {
   cursor: default;
+  text-align: center;
 }
 
 /************************************************************************** navbar */
@@ -72,11 +73,34 @@ body {
   color: goldenrod;
 }
 
+.li_sub_title {
+  font-weight: 700;
+}
+
 .music_posters {
   width: 13rem;
   height: 13rem;
   border-radius: 7rem;
   border: solid 0.2rem goldenrod;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 900px) {
+  .artist_sec_bg {
+    margin: 5rem 7rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .artist_sec_bg {
+    margin: 5rem 16rem 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .artist_sec_bg {
+    margin: 5rem 20rem 0;
+  }
 }
 
 /************************************************************************** likes */
