@@ -1,0 +1,105 @@
+/************************************************************************** default customs */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  cursor: default;
+}
+
+/************************************************************************** navbar */
+.nav_bar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  background-color: lightgoldenrodyellow;
+  height: 5rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.nav_bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.nav_bar a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+/************************************************************************** artists */
+
+/* title */
+.main_title {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.artist_info_bg {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.artist_sec_bg {
+  margin: 3rem 1rem 2rem;
+}
+
+.artist_sec_bg h2 {
+  margin-bottom: 2rem;
+}
+
+/* artists list */
+.ul_bg {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  line-height: 1.7rem;
+}
+
+.ul_bg li:nth-child(odd) {
+  color: goldenrod;
+}
+
+.music_posters {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 7rem;
+  border: solid 0.2rem goldenrod;
+}
+
+/************************************************************************** likes */
+.fa-solid.fa-thumbs-up {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-solid.fa-thumbs-up:hover {
+  color: goldenrod;
+}
+
+.likes_counter {
+  margin-left: 0.5rem;
+}
+
+/************************************************************************** footer */
+.footer_bg {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  bottom: 0;
+  background-color: lightgoldenrodyellow;
+  padding: 3rem;
+}
