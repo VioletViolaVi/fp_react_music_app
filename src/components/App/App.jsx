@@ -1,19 +1,19 @@
 import React from "react";
 import Artists from "../Artists/Artists";
-import Songs from "../Songs/Songs";
+import Footer from "../Footer/Footer";
+import NavBar from "../NavBar/NavBar";
 
-export default function App({ id, name }) {
-  const titles = [
-    { id: 1, name: "Singers" },
-    { id: 2, name: "Songs" }
-  ];
+export default function App() {
+  const titles = [{ id: 1, name: "Singers" }];
 
   return (
     <>
-      <h1>{titles[0].name}</h1>
-      <Artists />
-      <h1>{titles[1].name}</h1>
-      <Songs />
+      <NavBar />
+      <main>
+        <h1 className="main_title">{titles[0].name}</h1>
+        <Artists />
+      </main>
+      <Footer />
     </>
   );
 }
