@@ -104,17 +104,28 @@ body {
 }
 
 /************************************************************************** likes */
-.fa-solid.fa-thumbs-up {
+
+.ul_bg li:last-child {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+.fa-solid.fa-thumbs-up,
+.fa-solid.fa-thumbs-down {
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-.fa-solid.fa-thumbs-up:hover {
+.fa-solid.fa-thumbs-up:hover,
+.fa-solid.fa-thumbs-down:hover {
   color: goldenrod;
 }
 
 .likes_counter {
-  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: goldenrod;
 }
 
 /************************************************************************** footer */
