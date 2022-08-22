@@ -2,6 +2,7 @@ import React from "react";
 import Likes from "../Likes/Likes";
 import mariahImg from "../../assets/mariah.jfif";
 import rihannaImg from "../../assets/rihanna.png";
+import toniImg from "../../assets/toni.jpg";
 
 const allSingersInfo = [
   {
@@ -25,6 +26,17 @@ const allSingersInfo = [
     releaseDate: "September 26, 2012",
     coverArt: rihannaImg,
     imgAlt: "Rihanna cover art"
+  },
+  {
+    id: 3,
+    singerName: "Toni Braxton",
+    musicType: "R&B",
+    intro:
+      "Toni Michele Braxton is an American R&B singer. She has sold over 70 million records worldwide and is one of the best-selling female artists in history. Braxton has won seven Grammy Awards, nine Billboard Music Awards, seven American Music Awards, and numerous other accolades.",
+    songName: "Breathe Again",
+    releaseDate: "August 6, 1993",
+    coverArt: toniImg,
+    imgAlt: "Toni Braxton cover art"
   }
 ];
 
@@ -38,25 +50,25 @@ export default class Artists extends React.Component {
           }
           return (
             <>
-            <section key={singleObj.id} className="artist_sec_bg">
-              <h2>{singleObj.singerName}</h2>
-              <ul className="ul_bg">
-                <li>{singleObj.musicType}</li>
-                <li>{singleObj.intro}</li>
-                <li>{singleObj.releaseDate}</li>
-                <li>{singleObj.songName}</li>
-                <li>
-                  <img
-                    className="music_posters"
-                    src={singleObj.coverArt}
-                    alt={singleObj.imgAlt}
-                  />
-                </li>
-                <li>
-                  <Likes />
-                </li>
-              </ul>
-            </section>
+              <section key={singleObj.id} className="artist_sec_bg">
+                <h2>{singleObj.singerName}</h2>
+                <ul className="ul_bg">
+                  <li><span className="li_sub_title">Genre: </span>{singleObj.musicType}</li>
+                  <li><span className="li_sub_title">About: </span>{singleObj.intro}</li>
+                  <li><span className="li_sub_title">Released: </span>{singleObj.releaseDate}</li>
+                  <li><span className="li_sub_title">Song: </span>{singleObj.songName}</li>
+                  <li>
+                    <img
+                      className="music_posters"
+                      src={singleObj.coverArt}
+                      alt={singleObj.imgAlt}
+                    />
+                  </li>
+                  <li>
+                    <Likes />
+                  </li>
+                </ul>
+              </section>
             </>
           );
         })}
