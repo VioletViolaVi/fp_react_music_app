@@ -45,9 +45,6 @@ export default class Artists extends React.Component {
     return (
       <>
         {allSingersInfo.map((singleObj) => {
-          {
-            console.log(singleObj);
-          }
           return (
             <>
               <section key={singleObj.id} className="artist_sec_bg">
