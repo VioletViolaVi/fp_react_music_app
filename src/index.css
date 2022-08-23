@@ -36,11 +36,16 @@ body {
   text-decoration: underline;
 }
 
+/************************************************************************** form */
+.form_bg {
+  margin-top: 7rem;
+}
+
 /************************************************************************** artists */
 
 /* title */
 .main_title {
-  margin-top: 7rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
