@@ -1,6 +1,7 @@
 import mariahImg from "../../assets/photos/mariah.jfif";
 import rihannaImg from "../../assets/photos/rihanna.png";
 import toniImg from "../../assets/photos/toni.jpg";
+import kellyImg from "../../assets/photos/kelly.jpg";
 
 const allSingersInfo = [
   {
@@ -32,6 +33,16 @@ const allSingersInfo = [
     releaseDate: "August 6, 1993",
     coverArt: toniImg,
     imgAlt: "Toni Braxton cover art"
+  },
+  {
+    id: 4,
+    singerName: "Kelly Rowland",
+    musicType: "R&B",
+    para: "Kelendria Trene Rowland is an American singer, actress, and television personality. She rose to fame in the late 1990s as a member of Destiny's Child, one of the world's best-selling girl groups of all time. During the group's three-year hiatus, Rowland released her debut solo studio album, Simply Deep (2002), which debuted at number one on the UK Albums Chart and sold over 3 million copies worldwide.",
+    songName: "Lay it on Me ",
+    releaseDate: "August 16, 2011",
+    coverArt: kellyImg,
+    imgAlt: "Kelly Rowland cover art"
   }
 ];
 
