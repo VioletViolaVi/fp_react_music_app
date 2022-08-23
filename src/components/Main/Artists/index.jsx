@@ -1,4 +1,5 @@
 import React from "react";
+
 import Likes from "../Likes";
 
 function Artists(props) {
