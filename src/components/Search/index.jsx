@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function Search({ handleUserSubmittedSearch }) {
   const [currentUserInput, setCurrentUserInput] = useState("");
@@ -15,13 +15,22 @@ function Search({ handleUserSubmittedSearch }) {
 
   return (
     <>
+      {currentUserInput ? (
+        <p id="togglePara">
+          You entered '<span id="userInput">{currentUserInput}</span>'
+        </p>
+      ) : (
+        ""
+      )}
       <form className="form_bg" onSubmit={handleSubmit}>
         <label htmlFor="singerSearch"></label>
         <input
+          placeholder="Search"
           type="text"
           id="singerSearch"
           defaultValue={currentUserInput}
           onChange={handleInput}
+          required
         />
         <button>Send</button>
       </form>
