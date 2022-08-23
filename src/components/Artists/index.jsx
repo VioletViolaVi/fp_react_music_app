@@ -1,5 +1,5 @@
 import React from "react";
-import Likes from "../Likes/Likes";
+import Likes from "../Likes";
 
 function Artists(props) {
   return (
@@ -13,7 +13,7 @@ function Artists(props) {
           </li>
           <li>
             <span className="li_sub_title">About: </span>
-            {props.intro}
+            {props.para}
           </li>
           <li>
             <span className="li_sub_title">Released: </span>
