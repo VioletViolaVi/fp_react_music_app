@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-
-export { default as Artists } from "./Artists";
+export { default as Artists } from "./Main/Artists";
 export { default as Footer } from "./Footer";
-export { default as NavBar } from "./NavBar";
-export { default as Search } from "./Search";
+export { default as NavBar } from "./Header/NavBar";
+export { default as Search } from "./Main/Search";
+export { default as Title } from "./Main/Title";
