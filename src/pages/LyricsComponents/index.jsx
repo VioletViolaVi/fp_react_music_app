@@ -1,11 +1,11 @@
 import React from "react";
-import { Footer, NavBar } from "../../components";
+import { Footer, LyricsMain, NavBar } from "../../components";
 
 function LyricsComponents() {
   return (
     <>
       <NavBar />
-      <h1>Lyrics go here...</h1>
+      <LyricsMain />
       <Footer />
     </>
   );
