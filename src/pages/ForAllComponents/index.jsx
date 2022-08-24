@@ -1,48 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import { Artists, Footer, NavBar, Search, Title } from "../../components";
-import data from "./data";
+import { EveryMain, Footer, NavBar } from "../../components";
 
 export default function ForAllComponents() {
-  const [showData, setShowData] = useState([]);
-  const [enteredUserStr, setEnteredUserStr] = useState("");
-
-  useEffect(() => {
-    async function searchSinger() {
-      const result = await data;
-      // console.log("result ==>", result);
-      setShowData(result);
-    }
-    searchSinger();
-  }, [enteredUserStr]);
-
-  function handleUserSearch(userInput) {
-    // console.log("userInput ==>", userInput);
-    setEnteredUserStr(userInput);
-  }
-
   return (
     <>
-      <NavBar />
-      <main>
-        <Search handleUserSubmittedSearch={handleUserSearch} />
-        <Title />
-        {showData.map((singleObj) => {
-          return (
-            <Artists
-              key={singleObj.id}
-              singerName={singleObj.singerName}
-              musicType={singleObj.musicType}
-              para={singleObj.para}
-              releaseDate={singleObj.releaseDate}
-              songName={singleObj.songName}
-              coverArt={singleObj.coverArt}
-              imgAlt={singleObj.imgAlt}
-            />
-          );
-        })}
-      </main>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<NavBar />}>
+          <Route index element={<EveryMain />}></Route>
+          <Route path="contact" element={<h2>Contacts go here</h2>}></Route>
+          <Route index element={<Footer />}></Route>
+        </Route>
+
+        <Route path="*" element={<h1>Page Not Found 404!</h1>}></Route>
+      </Routes>
+
+      {/* <NavBar />
+      <EveryMain />
+      <Footer /> */}
     </>
   );
 }
