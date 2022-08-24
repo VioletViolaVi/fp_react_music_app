@@ -6,16 +6,10 @@ export default function NavBar() {
     <>
       <nav className="nav_bar">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="singers">Singers</NavLink>
-        <NavLink to="contact">Contact</NavLink>
+        <NavLink to="/lyrics">Lyrics</NavLink>
+        <NavLink to="/about">About Us</NavLink>
         <Outlet />
       </nav>
     </>
   );
 }
-
-// <nav className="nav_bar">
-//   <a href="#">Home</a>
-//   <a href="#">Singers</a>
-//   <a href="#">Contact</a>
-// </nav>
