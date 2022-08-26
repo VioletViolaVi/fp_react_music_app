@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Artists from "./Artists";
 import Search from "./Search";
 import Title from "./Title";
-import data from "../../pages/HomePage/data";
+import data from "./Data/data";
 
 function Home() {
   const [showData, setShowData] = useState([]);
