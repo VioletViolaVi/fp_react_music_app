@@ -1,3 +1,3 @@
-export { default as HomeComponents } from "./HomeComponents";
-export { default as LyricsComponents } from "./LyricsComponents";
-export { default as AboutUsComponents } from "./AboutUsComponents";
+export { default as HomePage } from "./HomePage";
+export { default as LyricsPage } from "./LyricsPage";
+export { default as AboutUsPage } from "./AboutUsPage";
