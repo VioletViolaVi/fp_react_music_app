@@ -1,3 +1,4 @@
+export { default as BackBtn } from "./BackBtn";
 export { default as NavBar } from "./NavBar";
 export { default as Home } from "./Home";
 export { default as Lyrics } from "./Lyrics";
