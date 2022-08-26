@@ -1,7 +1,7 @@
-import mariahImg from "../../assets/photos/mariah.jfif";
-import rihannaImg from "../../assets/photos/rihanna.png";
-import toniImg from "../../assets/photos/toni.jpg";
-import kellyImg from "../../assets/photos/kelly.jpg";
+import mariahImg from "../../../assets/photos/mariah.jfif";
+import rihannaImg from "../../../assets/photos/rihanna.png";
+import toniImg from "../../../assets/photos/toni.jpg";
+import kellyImg from "../../../assets/photos/kelly.jpg";
 
 const allSingersInfo = [
   {
